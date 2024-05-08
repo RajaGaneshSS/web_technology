@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            IIPC calculator
+        </title>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <style>
+            body{
+                background-color: aquamarine;
+            }
+            label{
+                color: #000;;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>IIPC Calculator</h1>
+        <div class="card">
+        <form method="post">
+            <label for="nameorg">Name of the Industry/Organisation</label>
+            <input type="text" id="nameorg" name="nameorg" required/><br><br>
+            <label for="nature">Nature of Consultancy</label>
+            <input type="radio" id="test" name="nature" value="Testing"/>
+            <label for="test">Testing</label>
+            <input type="radio" id="train" name="nature" value="Training"/>
+            <label for="train">Training</label>
+            <input type="radio" id="consult" name="nature" value="Consultancy"/>
+            <label for="consult">Consultancy</label><br><br>
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" name="amount" required/><br><br>
+            <label for="nofaculty">Number of faculty</label>
+            <select id="sel" name="fac">
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+            </select><br><br>
+            <button type="button" onclick="print()">Submit</button>
+        </form>
+        </div>
+        <script>
+            function print(){
+                document.getElementById("b").innerHTML="Your Bill";
+                var name=document.getElementById("nameorg").value;
+                var flag=false;
+                var radioButtons=document.getElementsByName("nature");
+                for(let radio of radioButtons)
+                {
+                    if(radio.checked)
+                    {
+                        option.innerHTML="Nature of Consultancy is "+radio.value;
+                        flag=true;
+                    }
+                }
+                if(flag==false)
+                {
+                    alert("select nature of consultancy");
+                }
+                var amount=parseFloat(document.getElementById("amount").value);
+                var gst=parseFloat(amount*0.18);
+                var amount1=parseFloat(gst+amount);
+                document.getElementById("c1").innerHTML="Name of the Industry: "+name;
+                document.getElementById("c2").innerHTML="Amount: "+amount.toFixed(2);
+                document.getElementById("c3").innerHTML="Including GST: "+amount1.toFixed(2);
+                var a1=parseFloat(document.getElementById("amount").value);
+                var a2=a1*(30/100);
+                var a3=a1*(70/100);
+                document.getElementById("c4").innerHTML="Amount going for the college: "+a2.toFixed(2);
+                document.getElementById("c5").innerHTML="Amount going for the faculty: "+a3.toFixed(2);
+                var no=parseInt(document.getElementById("sel").value);
+                document.getElementById("c6").innerHTML="Number of faculty:"+no;
+                var apf=a3/no;
+                document.getElementById("c7").innerHTML="Amount per faculty:"+apf.toFixed(2);
+            }
+        </script>
+        <h3 id="b"></h3>
+        <p id="c1"></p>
+        <p id="option"></p>
+        <p id="c2"></p>
+        <p id="c3"></p>
+        <p id="c4"></p>
+        <p id="c5"></p>
+        <p id="c6"></p>
+        <p id="c7"></p>
+    </body>
+</html>
