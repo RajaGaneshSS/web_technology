@@ -1,0 +1,69 @@
+<html>
+<head>
+<center>RESUME</center>
+<hr>
+<img src="profile.png" width="150px" height=150px>
+<h2 style="color:red;">PERSONAL INFO:</h2>
+<p>NAME:Somesh.V</p>
+<p>EMAIL ID:someshv.22it@kongu.edu</p>
+<p>CONTACT NUMBER:657892104</p>
+<hr>
+OBJECTIVE:
+<p>
+<ul>
+<li>A highly motivated and hardworking individual looking for a responsible role in a reputable organization.</li>
+<li>Create value for my prospective employer through my dedicated and diligent efforts.</li>
+<li>I am seeking a role in a company where I can contribute my ideas and be mentored towards a successful career. </li>
+</ul>
+</p>
+<hr>
+EDUCATIONAL QUALIFICATION:
+<table border="3">
+ <tr>
+   <th>EDUCATION</th>
+   <th>NAME OF INSTITUTION</th>
+   <th>PERCENTAGE</th>
+ </tr>
+ <tr>
+   <td>10th</td>
+   <td>NOTRE DAME OF HOLY CROSS SCHOOL</td>
+   <td>77</td>
+ </tr>
+ <tr>
+   <td>12th</td>
+   <td>SRK MATRIC HR SECONDARY SCHOOL</td>
+   <td>73.4</td>
+ </tr>
+ <tr>
+   <td>UG</td>
+   <td>KONGU ENGINEERING COLLEGE</td>
+   <td>75.5</td>
+ </tr>
+</table>
+<hr>
+LANGUAGES KNOWN:
+<ol style="color:blue;">
+<li>C</li>
+<li>C++</li>
+<li>java</li>
+</ol>
+<hr>
+<p>AREA OF INTREST:
+<ul>
+<li>Sports</li>
+<li>Learning languages</li>
+<li>Volunteering and community involvement</li>
+</ul>
+<style>
+	h4{color:red;}
+</style>
+
+<hr>
+<head>SKILL SET:</head>
+<ul>
+<li>Leadership</li>
+<li>Creativity</li>
+<li>Active Listening</li>
+<hr>
+</head>
+
