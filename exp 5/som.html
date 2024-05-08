@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+            color: #333;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="radio"], input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            width: auto;
+            margin: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>2
+
+
+
+
+
+
+    
+    <h1>Login Page</h1>
+    <form action="http://localhost:8000/login" method="get">
+        <label for="username">Name:</label><br>
+        <input type="text" name="username" value=""><br>
+        
+        <label for="id">Roll No:</label><br>
+        <input type="text" name="id" value=""><br>
+        
+        <label for="branch">Department:</label><br>
+        <input type="text" name="branch" value=""><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="MALE"> Male<br>
+        <input type="radio" name="gender" value="FEMALE"> Female<br>
+        
+        <label for="phno">Year:</label><br>
+        <input type="text" name="phno" value=""><br>
+        
+        <label for="phno">Phone Number:</label><br>
+        <input type="text" name="phno" value=""><br>
+        
+        <label for="branchadd">Address:</label><br>
+        <input type="text" name="branchadd" value=""><br>
+        
+        <input type="submit" name="login" value="Login"><br>
+    </form>
+</body>
+</html>
